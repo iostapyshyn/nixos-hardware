@@ -49,5 +49,7 @@ buildLinux (args // {
     STAGING = yes;
   };
 
+  ignoreConfigErrors = true;
+
   kernelPatches = [];
 } // (args.argsOverride or {}))
